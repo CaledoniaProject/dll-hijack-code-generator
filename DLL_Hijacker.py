@@ -114,7 +114,7 @@ def run(filename):
         print '    - Output', cppname
         print '    - Number of symbols: ', len(symbols)
 
-        generate(cppname, 'new_' + filename, symbols)
+        generate(cppname, 'new_' + os.path.basename(filename), symbols)
 
     except Exception as e:
         traceback.print_exc()
